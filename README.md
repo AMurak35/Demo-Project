@@ -17,7 +17,7 @@
 3. Playwright-Browser installieren:
 `npx playwright install`
 
-Tests ausführen
+Tests ausführen und analysieren
 - Einen bestimmten Test starten:
 npx playwright test tests/login-page.spec.ts
 - Alle Tests ausführen:
