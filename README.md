@@ -11,8 +11,7 @@
 ## Installation
 1. Repository klonen:
 
-`git clone <repository-url>`
-
+`git clone <repository-url>`  
 `cd <repository-ordner>`
 
 2. Abhängigkeiten installieren:
@@ -32,8 +31,7 @@
 `npx playwright test`
 - Parallelisierung für schnellere Testläufe nutzen:
 
-`npx playwright test --workers=4`
-
+`npx playwright test --workers=4`  
 (Die Anzahl der Workers kann je nach Leistung des Systems angepasst werden)
 - Debug-Modus für die Fehleranalyse nutzen:
 
@@ -47,16 +45,12 @@ Die Testberichte werden nach dem Testlauf automatisch erstellt. Um sie als HTML-
 ## Parallelisierung
 Für eine schnellere Ausführung der Tests ist die Parallelisierung in playwright.config.ts aktiviert. Dort kann man die Anzahl der parallelen Worker anpassen.
 
-```export default defineConfig({
+```
+export default defineConfig({
   testDir: './tests',
   fullyParallel: true, // Damit wird die Parallelisierung aktiviert
   workers: 4, // 
   retries: 1, // Wiederholungen bei Fehlern
-  use: {
-    headless: true,
-    baseURL: 'https://www.saucedemo.com',
-    trace: 'on-first-retry', // Trace nur bei einem Fehler
-  },
 });
 ```
 
@@ -66,16 +60,21 @@ Die Projektstruktur ist folgenderweise aufgebaut:
 ```
 sauce-demo-project/
 ├── pages/
-│   ├── inventory-page.ts         # Page Object für die Produktseite
-│   ├── login-page.ts             # Page Object für die Login-Seite
+│   ├── login-page.ts             # Page Object für die Produktseite
+│   ├── inventory-page.ts         # Page Object für die Login-Seite
+│   ├── product-page.ts           # Page Object für die Product-Seite
+│   ├── cart-page.ts              # Page Object für die Cart-Seite
+│   ├── checkout-page.ts          # Page Object für die Checkout-Seite
 ├── tests/
-│   ├── e2e-test.spec.ts          # Page Object für die Login-Seite
-│   ├── inventory-page.spec.ts    # Page Object für die Produktseite
-│   ├── login-page.spec.ts        # Page Object für den Warenkorb
+│   ├── login-page.spec.ts        # Tests für die Login-Seite
+│   ├── product-page.spec.ts      # Tests für die Produktseite
+│   ├── cart-page.spec.ts         # Tests für den Warenkorb
+│   ├── checkout-page.spec.ts     # Tests für die Checkout-Seite
 ├── global-setup.ts               # Globales Setup für Authentifizierung
 ├── playwright.config.ts          # Playwright-Konfigurationsdatei
 ├── package.json                  # Projektabhängigkeiten
-└── README.md                     # Dokumentation
+|── README.md                     # Projektbeschreibung
+└── Dokumentation.md              # Teststrategie und Testabdeckung
 ```
 
 ## Cross-Browser-Tests
