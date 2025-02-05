@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
 import { InventoryPage } from '../pages/inventory-page';
 
 test('Add to and remove products from cart on the products page', async ({ page }) => {
