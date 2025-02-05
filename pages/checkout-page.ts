@@ -20,7 +20,7 @@ export class CheckoutPage {
     constructor(page: Page) {
         this.page = page;
         this.shoppingCart = page.locator('.shopping_cart_link');
-        this.shoppingCartBadge = page.locator('[data-test="shopping_cart_badge"]');
+        this.shoppingCartBadge = page.locator('[data-test="shopping-cart-badge"]');
         this.firstName = page.locator('[data-test="firstName"]');
         this.lastName = page.locator('[data-test="lastName"]');
         this.postalCode = page.locator('[data-test="postalCode"]');

@@ -27,7 +27,7 @@ export class InventoryPage {
         this.productItemPrice = page.locator('.inventory_item_price');
         this.addToCartButton = page.locator('text="Add to cart"')
         this.removeFromCartButton = page.locator('button', { hasText: 'Remove' });
-        this.shoppingCartBadge = page.locator('[data-test="shopping_cart_badge"]');
+        this.shoppingCartBadge = page.locator('[data-test="shopping-cart-badge"]');
     }
 
     async goto() {
@@ -105,10 +105,6 @@ export class InventoryPage {
         } else {
             await expect(this.shoppingCartBadge).not.toBeVisible();
         }
-    }
-
-    async goToCart() {
-        await this.shoppingCart.click();
     }
 
     async goToShoppingCart() {

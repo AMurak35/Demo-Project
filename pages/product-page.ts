@@ -14,7 +14,7 @@ export class ProductPage {
         this.addToCartButton = page.locator('text="Add to cart"');
         this.removeFromCartButton = page.locator('button', { hasText: 'Remove' });
         this.backToPtoductsButton = page.locator('[data-test="back-to-products"]');
-        this.shoppingCartBadge = page.locator('[data-test="shopping_cart_badge"]');
+        this.shoppingCartBadge = page.locator('[data-test="shopping-cart-badge"]');
     }
 
     async addToCartButtonClick() {
