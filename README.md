@@ -38,7 +38,7 @@ Um sicherzustellen, dass diese erweiterung benutzt wird, muss man die VS-Code-Ei
 }
 ```
 
-Man kann _Prettier_ z.B. für bestimmte Sprachen einer nutzen. So sieht man im oberen Beispiel, dass es für alle Sprachen außer Java verwendet wird.
+Man kann _Prettier_ für bestimmte Sprachen nutzen. So sieht man im oberen Beispiel, dass es für alle Sprachen außer Java verwendet wird.
 
 ## Tests ausführen
 
