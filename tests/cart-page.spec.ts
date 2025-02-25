@@ -5,7 +5,7 @@ import { CartPage } from '../pages/cart-page';
 test('Check added and removed products on the cart page', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);
-  inventoryPage.goto();
+  await inventoryPage.goto();
   await inventoryPage.addProductToCart('Sauce Labs Onesie');
   await inventoryPage.addProductToCart('Sauce Labs Fleece Jacket');
   await inventoryPage.addProductToCart('Sauce Labs Bolt T-Shirt');
