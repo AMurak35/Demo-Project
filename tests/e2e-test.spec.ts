@@ -7,7 +7,7 @@ import { CartPage } from '../pages/cart-page';
 
 test('E2E-Test | Successfull check out', async ({ page, context }) => {
   await context.clearCookies();
-  const loginPage = LoginPage(page);
+  const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const productPage = new ProductPage(page);
   const checkoutPage = new CheckoutPage(page);
