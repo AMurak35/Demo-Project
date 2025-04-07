@@ -36,7 +36,3 @@ Then('he sees {string}', async function (expected) {
     }
   }
 });
-
-After(async function () {
-  await browser.close();
-});
