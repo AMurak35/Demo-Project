@@ -7,7 +7,6 @@ Given('the user is on the inventory page', async function () {
   await this.page.goto('https://www.saucedemo.com/inventory.html');
 });
 
-// === Scenario: Adding/Removing products on the product page ===
 // === Given ===
 Given('the cart contains the following products:', async function (dataTable) {
   const products = dataTable.raw().flat();
@@ -39,19 +38,6 @@ When('the user {string} the product', async function (action) {
   }
 });
 
-// === Then ===
-Then('the cart counter should show {string}', async function (countAfter) {
-  const cartBadge = this.page.locator('[data-test="shopping-cart-badge"]');
-
-  if (countAfter === '0') {
-    await expect(cartBadge).toHaveCount(0);
-  } else {
-    await expect(cartBadge).toHaveText(countAfter);
-  }
-});
-
-// === Scenario: Adding/Removing multiple products and checking the cart ===
-// === When ===
 When('the user {string} the following products:', async function (action, dataTable) {
   const products = dataTable.raw().flat();
 
@@ -66,22 +52,31 @@ When('the user {string} the following products:', async function (action, dataTa
 });
 
 // === Then ===
+Then('the cart counter should show {string}', async function (countAfter) {
+  const cartBadge = this.page.locator('[data-test="shopping-cart-badge"]');
+
+  if (countAfter === '0') {
+    await expect(cartBadge).toHaveCount(0);
+  } else {
+    await expect(cartBadge).toHaveText(countAfter);
+  }
+});
+
 Then('the cart should contain the following products:', async function (dataTable) {
   const expectedProducts = dataTable.raw().flat();
 
-  console.log('📦 Erwartete Produkte:', expectedProducts);
+  console.log('Erwartete Produkte:', expectedProducts);
   await expect(this.page.locator('.shopping_cart_link')).toBeVisible();
   await this.page.click('.shopping_cart_link');
   await this.page.waitForURL('https://www.saucedemo.com/cart.html');
-  console.log('✅ Cart loaded!');
 
   const cartItems = this.page.locator('.cart_item');
 
   for (const productName of expectedProducts) {
-    console.log(`🔍 Suche nach Produkt im Warenkorb: "${productName}"`);
+    console.log(`Suche nach Produkt im Warenkorb: "${productName}"`);
     const match = this.page.locator('.cart_item').filter({ hasText: productName });
     await expect(match).toHaveCount(1);
-    console.log(`✅ Genau ein Treffer gefunden für "${productName}"`);
+    console.log(`Ein Treffer gefunden für "${productName}"`);
   }
 
   await expect(cartItems).toHaveCount(expectedProducts.length);

@@ -88,20 +88,29 @@ Die Projektstruktur ist folgenderweise aufgebaut:
 ```
 sauce-demo-project/
 ├── pages/
-│   ├── login-page.ts             # Page Object für die Produktseite
-│   ├── inventory-page.ts         # Page Object für die Login-Seite
-│   ├── product-page.ts           # Page Object für die Product-Seite
-│   ├── cart-page.ts              # Page Object für die Cart-Seite
-│   ├── checkout-page.ts          # Page Object für die Checkout-Seite
+│   ├── login-page.ts                           # Page Object für die Produktseite
+│   ├── inventory-page.ts                       # Page Object für die Login-Seite
+│   ├── product-page.ts                         # Page Object für die Product-Seite
+│   ├── cart-page.ts                            # Page Object für die Cart-Seite
+│   ├── checkout-page.ts                        # Page Object für die Checkout-Seite
 ├── tests/
-│   ├── login-page.spec.ts        # Tests für die Login-Seite
-│   ├── product-page.spec.ts      # Tests für die Produktseite
-│   ├── cart-page.spec.ts         # Tests für den Warenkorb
-│   ├── checkout-page.spec.ts     # Tests für die Checkout-Seite
-├── global-setup.ts               # Globales Setup für Authentifizierung
-├── playwright.config.ts          # Playwright-Konfigurationsdatei
-├── package.json                  # Projektabhängigkeiten
-└── README.md                     # Projektbeschreibung, Teststrategie und Testabdeckung
+│   ├── features/                               # Cucumber Dateien
+│   |   ├── step_definitions/
+│   |   |   ├── hooks.js                        # Before und After Schritte
+│   |   |   ├── stepdefs-checkout-process.js    # Step definitions für den Checkout-Prozess
+│   |   |   ├── stepdefs-loging.js              # Step definitions für die Logging-Seite
+│   |   |   ├── stepdefs-products-to-cart.js    # Step definitions für die Product-Seite
+│   |   ├── checkout-process.feature            # Feature definitions für den Checkout-Prozess
+│   |   ├── loging-in.feature                   # Feature definitions für die Logging-Seite
+│   |   ├── products-to-cart.feature            # Feature definitions für die Product-Seite
+│   ├── login-page.spec.ts                      # Tests für die Login-Seite
+│   ├── product-page.spec.ts                    # Tests für die Produktseite
+│   ├── cart-page.spec.ts                       # Tests für den Warenkorb
+│   ├── checkout-page.spec.ts                   # Tests für die Checkout-Seite
+├── global-setup.ts                             # Globales Setup für Authentifizierung
+├── playwright.config.ts                        # Playwright-Konfigurationsdatei
+├── package.json                                # Projektabhängigkeiten
+└── README.md                                   # Projektbeschreibung, Teststrategie und Testabdeckung
 ```
 
 ## Cross-Browser-Tests
