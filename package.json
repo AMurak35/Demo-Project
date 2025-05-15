@@ -7,7 +7,8 @@
     "lint": "npx eslint .",
     "format": "npx prettier --check .",
     "check-all": "npm run lint && npm run format",
-    "test": "cucumber-js"
+    "test:report": "cmd /C \"cucumber-js tests/features --require-module ts-node/register --require tests/step_definitions/**/*.ts --format json:reports/cucumber-report.json || exit 0\" && ts-node generate-report.ts",
+    "test": "cucumber-js tests/features --require-module ts-node/register --require tests/step_definitions/*.ts"
   },
   "husky": {
     "hooks": {
@@ -27,12 +28,14 @@
   "description": "",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
     "@eslint/js": "^9.21.0",
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.5",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
-    "@typescript-eslint/parser": "^8.25.0",
-    "eslint": "^9.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-playwright": "^2.2.0",
     "eslint-plugin-prettier": "^5.2.3",
@@ -41,6 +44,7 @@
     "lint-staged": "^15.4.3",
     "multiple-cucumber-html-reporter": "^3.9.2",
     "prettier": "^3.5.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
   }

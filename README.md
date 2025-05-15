@@ -6,7 +6,7 @@
 
 **Ziel:** Automatisierte Tests der Sauce-Demo-Seite
 
-**Tools:** Playwright mit TypeScript
+**Frameworks:** Cucumber, Playwright
 
 ## Installation
 
@@ -22,6 +22,10 @@
 3. Playwright-Browser installieren:
 
 `npx playwright install`
+
+4. Cucumber installieren:
+
+`npm install --save-dev @cucumber/cucumber`
 
 ## Statische Codeanalyse
 
@@ -40,33 +44,36 @@ Um sicherzustellen, dass diese erweiterung benutzt wird, muss man die VS-Code-Ei
 
 Man kann _Prettier_ für bestimmte Sprachen nutzen. So sieht man im oberen Beispiel, dass es für alle Sprachen außer Java verwendet wird.
 
+## Cucumbertests
+
+Cucumbertests sind unter `tests/features` zu finden. Diese werden den drei Schritten im Kaufprozess entsprechend unterteilt: Loging, Auswahl der Produkte, Kaufabschluss.
+
+Die Stepdefinitions befinden sich unter `tests/features/step_definitions`. Sie sind ebenso in drei Dateien verteilt:
+
+```
+- stepdefs-login.ts
+- stepdefs-inventory-page.ts
+- stepdefs-checkout-process.ts
+- stepdefs-cart-page.ts
+```
+
+Die Before- und After-Conditionen befindet sich in der Datei `hooks.ts`.
+
+Die Datei `stepdefs-common.ts` beinhaltet Schitte, die für mehrere Features gleich sind.
+
+In der Datei `world.ts` wird die CustomWorld-Klasse definiert.
+
 ## Tests ausführen
 
-- Einen bestimmten Test von einer bestimmten Seite starten:
+- Testfälle werden mit diesem Befehl ausgeführt:
 
-`npx playwright test tests/login-page.spec.ts`
+`npm run`
 
-- Alle Tests ausführen:
+- Um das Ergebnis der Testdurchführung als JSON-Report zu speichern und danach HTML-Report-Skript zu starten, wird folgender Befehl benutzt:
 
-`npx playwright test`
+`npm test:report`
 
-- Parallelisierung für schnellere Testläufe nutzen:
-
-`npx playwright test --workers=4`
-
-(Die Anzahl der Workers kann je nach Leistung des Systems angepasst werden)
-
-- Debug-Modus für die Fehleranalyse nutzen:
-
-`npx playwright test --debug`
-
-## Berichte generieren
-
-Die Testberichte werden nach dem Testlauf automatisch erstellt. Um sie als HTML-Report anzusehen, kann dieser Befehl ausgeführt werden:
-
-`npx playwright show-report`
-
-Für detaillierte Testberichte wird _Playwright Trace Report_ benutzt. Dafür kann man den `--trace` Flag auf `on` setzen und anschließend den HTML-Bericht öffnen und auf das Trace-Symbol klicken.
+Damit werden die Testberichte nach dem Testlauf automatisch erstellt.
 
 ## Parallelisierung
 
@@ -79,38 +86,6 @@ export default defineConfig({
   workers: 4, //
   retries: 1, // Wiederholungen bei Fehlern
 });
-```
-
-## Projektstruktur
-
-Die Projektstruktur ist folgenderweise aufgebaut:
-
-```
-sauce-demo-project/
-├── pages/
-│   ├── login-page.ts                           # Page Object für die Produktseite
-│   ├── inventory-page.ts                       # Page Object für die Login-Seite
-│   ├── product-page.ts                         # Page Object für die Product-Seite
-│   ├── cart-page.ts                            # Page Object für die Cart-Seite
-│   ├── checkout-page.ts                        # Page Object für die Checkout-Seite
-├── tests/
-│   ├── features/                               # Cucumber Dateien
-│   |   ├── step_definitions/
-│   |   |   ├── hooks.js                        # Before und After Schritte
-│   |   |   ├── stepdefs-checkout-process.js    # Step definitions für den Checkout-Prozess
-│   |   |   ├── stepdefs-loging.js              # Step definitions für die Logging-Seite
-│   |   |   ├── stepdefs-products-to-cart.js    # Step definitions für die Product-Seite
-│   |   ├── checkout-process.feature            # Feature definitions für den Checkout-Prozess
-│   |   ├── loging-in.feature                   # Feature definitions für die Logging-Seite
-│   |   ├── products-to-cart.feature            # Feature definitions für die Product-Seite
-│   ├── login-page.spec.ts                      # Tests für die Login-Seite
-│   ├── product-page.spec.ts                    # Tests für die Produktseite
-│   ├── cart-page.spec.ts                       # Tests für den Warenkorb
-│   ├── checkout-page.spec.ts                   # Tests für die Checkout-Seite
-├── global-setup.ts                             # Globales Setup für Authentifizierung
-├── playwright.config.ts                        # Playwright-Konfigurationsdatei
-├── package.json                                # Projektabhängigkeiten
-└── README.md                                   # Projektbeschreibung, Teststrategie und Testabdeckung
 ```
 
 ## Cross-Browser-Tests
