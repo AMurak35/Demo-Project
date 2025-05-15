@@ -1,5 +1,256 @@
 [
   {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "managing-products-in-the-cart;add-and-remove-products-and-check-cart-contents",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add and remove products and check cart contents",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1601221599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the cart page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129653900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user goes to the inventory page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286120199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user adds \"Sauce Labs Onesie\" to the cart",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115558999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user adds \"Sauce Labs Fleece Jacket\" to the cart",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92100300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user adds \"Sauce Labs Bolt T-Shirt\" to the cart",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99492400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user goes to the cart page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-common.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83655999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the cart should contain \"3\" items",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43077800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks the continue shopping button",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79142100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user removes \"Sauce Labs Onesie\" from the inventory page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107702999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user goes to the cart page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-common.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73961999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the cart should contain \"2\" items",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44672000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user clicks the continue shopping button",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84526400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the user removes \"Sauce Labs Fleece Jacket\" from the inventory page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78138899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user removes \"Sauce Labs Bolt T-Shirt\" from the inventory page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77842099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user goes to the cart page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-common.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80958300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the cart should contain \"0\" items",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-cart-page.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44141799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 144268100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "managing-products-in-the-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Managing products in the cart",
+    "tags": [],
+    "uri": "tests\\features\\cart-page.feature"
+  },
+  {
     "description": "\tUser can go to checkout and finalize his shopping",
     "elements": [
       {
@@ -14,99 +265,111 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 763971299
+              "duration": 1383205299
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Backpack"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "Given ",
             "line": 6,
-            "name": "the user added following products to the cart:",
+            "name": "the user adds the product \"Sauce Labs Fleece Jacket\" to the cart",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:6"
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 141282200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "* ",
-            "line": 10,
-            "name": "the user started the checkout process",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 90366100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "* ",
-            "line": 11,
-            "name": "the user filled in his personal information",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 50430299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "* ",
-            "line": 12,
-            "name": "the user clicked on \"Continue\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 64345100
+              "duration": 396071700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "he finishes the checkout",
+            "line": 7,
+            "name": "the user goes to the cart page",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:51"
+              "location": "tests\\step_definitions\\stepdefs-common.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 55068499
+              "duration": 87773799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user starts the checkout process",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81370399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user enters the checkout data \"Monika\", \"Test\", \"12345\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113716899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user continues the checkout",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116198300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user is on the page \"Checkout: Overview\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21061000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user \"finishes\" the checkout",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111942999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 13,
             "name": "he lands on the \"Success\" page",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:61"
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 6216200
+              "duration": 33462100
             }
           },
           {
@@ -114,122 +377,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80077600
+              "duration": 189449199
             }
           }
         ],
         "tags": [
           {
             "name": "@checkout",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "checkout-process;cancel-checkout-process-on-the-first-checkout-page",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Cancel checkout process on the first checkout page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 662016200
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Backpack"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "the user added following products to the cart:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 102598899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the user started the checkout process",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 90215200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user is on the page \"Checkout: Your Information\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6166799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "he cancels checkout",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 43683300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "he lands on the \"Cart\" page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5277599
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 55949600
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout",
-            "line": 16
+            "line": 1
           }
         ],
         "type": "scenario"
@@ -238,7 +393,7 @@
         "description": "",
         "id": "checkout-process;cancel-checkout-process-on-the-overview-page",
         "keyword": "Scenario",
-        "line": 27,
+        "line": 15,
         "name": "Cancel checkout process on the overview page",
         "steps": [
           {
@@ -246,89 +401,111 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 661107400
+              "duration": 1363782800
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Onesie"]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "Given ",
-            "line": 28,
-            "name": "the user added following products to the cart:",
+            "line": 16,
+            "name": "the user adds the product \"Sauce Labs Fleece Jacket\" to the cart",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:6"
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 186346099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "the user started the checkout process",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 106384000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "the user is on the page \"Checkout: Overview\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94128900
+              "duration": 541621600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 35,
-            "name": "he cancels checkout",
+            "line": 17,
+            "name": "the user goes to the cart page",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:56"
+              "location": "tests\\step_definitions\\stepdefs-common.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 59766300
+              "duration": 94502000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the user starts the checkout process",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81374300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the user enters the checkout data \"Monika\", \"Test\", \"12345\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108766500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user continues the checkout",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74599899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user is on the page \"Checkout: Overview\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14754799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user \"cancels\" the checkout",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100545000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 23,
             "name": "he lands on the \"Inventory\" page",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-checkout-process.js:61"
+              "location": "tests\\step_definitions\\stepdefs-checkout-process.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 4714799
+              "duration": 14171399
             }
           },
           {
@@ -336,281 +513,47 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62055400
+              "duration": 122304599
             }
           }
         ],
         "tags": [
           {
             "name": "@checkout",
-            "line": 26
+            "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "checkout-process",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Checkout process",
-    "tags": [],
-    "uri": "tests\\features\\checkout-process.feature"
-  },
-  {
-    "description": "\tUser can successfully log in with valid data",
-    "elements": [
+    "tags": [
       {
-        "description": "",
-        "id": "loging-in;log-in-with-different-user-data",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Log in with different user data",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 500039099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user entered \"standard_user\" and \"secret_sauce\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55492900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "he clicks on the login button",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 114798499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "he sees \"Inventory page\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6932299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 78599
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "loging-in;log-in-with-different-user-data",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Log in with different user data",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 485786300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user entered \"locked_out_user\" and \"secret_sauce\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53388300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "he clicks on the login button",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58099799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "he sees \"Locked Out Error\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10620200
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 82999
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "loging-in;log-in-with-different-user-data",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Log in with different user data",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 522490699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user entered \"standard_user\" and \"secret\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 56780700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "he clicks on the login button",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55831099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "he sees \"Wrong Credentials Error\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-loging.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9996900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 201600
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
+        "name": "@checkout",
+        "line": 1
       }
     ],
-    "id": "loging-in",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Loging in",
-    "tags": [],
-    "uri": "tests\\features\\loging-in.feature"
+    "uri": "tests\\features\\checkout-process.feature"
   },
   {
     "description": "\tUser can add products to cart and remove them from it",
     "elements": [
       {
         "description": "",
-        "id": "adding-to-and-removing-products-from-cart;adding-products-on-the-product-page",
+        "id": "adding-to-and-removing-products-from-cart;adding-to-and-removing-products-from-cart-on-the-inventory-page",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "Adding products on the product page",
+        "line": 5,
+        "name": "Adding to and removing products from cart on the inventory page",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 752550099
+              "duration": 1379024499
             }
           },
           {
@@ -619,551 +562,108 @@
             "line": 6,
             "name": "the user is on the inventory page",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 113207799
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the cart contains the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 106767200
+              "duration": 321785100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "the user goes to product \"Sauce Labs Backpack\"",
+            "line": 7,
+            "name": "the user \"adds\" \"Sauce Labs Bolt T-Shirt\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:26"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 49506699
+              "duration": 94371599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user \"adds\" \"Sauce Labs Onesie\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78712999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user \"removes\" \"Sauce Labs Onesie\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82475099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user \"adds\" \"Sauce Labs Bike Light\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82353299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "the user \"adds\" the product",
+            "name": "the user \"removes\" \"Sauce Labs Bike Light\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:32"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 46696199
+              "duration": 89647100
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 12,
-            "name": "the cart counter should show \"3\"",
+            "name": "the user \"adds\" \"Sauce Labs Onesie\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:43"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 6569100
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 65510899
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adding-to-and-removing-products-from-cart;adding-products-on-the-product-page",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Adding products on the product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 687856499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "the user is on the inventory page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 132386800
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the cart contains the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 89275499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "the user goes to product \"Sauce Labs Onesie\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 52831299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user \"adds\" the product",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 44167799
+              "duration": 96445999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "the cart counter should show \"3\"",
+            "line": 13,
+            "name": "the cart should display \"2\"",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:43"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 4928900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67639100
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adding-to-and-removing-products-from-cart;removing-products-on-the-product-page",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Removing products on the product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 671227500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the inventory page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 135265400
+              "duration": 12750899
             }
           },
           {
             "arguments": [
               {
                 "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the cart contains the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 105333500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "the user goes to product \"Sauce Labs Fleece Jacket\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 51014699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "the user \"removes\" the product",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 45728399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "the cart counter should show \"1\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5101899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 60304200
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adding-to-and-removing-products-from-cart;removing-products-on-the-product-page",
-        "keyword": "Scenario",
-        "line": 31,
-        "name": "Removing products on the product page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 650060599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "the user is on the inventory page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 139304799
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the cart contains the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 118856600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "the user goes to product \"Sauce Labs Bike Light\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 46399600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "the user \"removes\" the product",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 46076699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "the cart counter should show \"1\"",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4852399
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 68745500
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adding-to-and-removing-products-from-cart;adding-multiple-products-and-checking-the-cart",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "Adding multiple products and checking the cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 650073700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 34,
-            "name": "the user is on the inventory page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 119915299
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Backpack"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 35,
-            "name": "the user \"adds\" the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 151952600
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Backpack"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bike Light"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "the cart should contain the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 80602899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 61830500
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "adding-to-and-removing-products-from-cart;removing-multiple-products-and-checking-the-cart",
-        "keyword": "Scenario",
-        "line": 44,
-        "name": "Removing multiple products and checking the cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 617693100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 45,
-            "name": "the user is on the inventory page",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 140750300
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  },
                   {
                     "cells": ["Sauce Labs Bolt T-Shirt"]
                   },
@@ -1174,59 +674,14 @@
               }
             ],
             "keyword": "And ",
-            "line": 46,
-            "name": "the cart contains the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 118748400
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Onesie"]
-                  },
-                  {
-                    "cells": ["Sauce Labs Bolt T-Shirt"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 50,
-            "name": "the user \"removes\" the following products:",
-            "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 94746900
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": ["Sauce Labs Fleece Jacket"]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 53,
+            "line": 14,
             "name": "the cart should contain the following products:",
             "match": {
-              "location": "tests\\features\\step_definitions\\stepdefs-products-to-cart.js:69"
+              "location": "tests\\step_definitions\\stepdefs-inventory-page.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 66520699
+              "duration": 134918699
             }
           },
           {
@@ -1234,7 +689,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68756800
+              "duration": 154428000
             }
           }
         ],
@@ -1257,6 +712,269 @@
         "line": 1
       }
     ],
-    "uri": "tests\\features\\products-to-cart.feature"
+    "uri": "tests\\features\\inventory-page.feature"
+  },
+  {
+    "description": "\tUser can successfully log in with valid data",
+    "elements": [
+      {
+        "description": "",
+        "id": "loging-in;log-in-with-different-user-data",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Log in with different user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 931249599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110815499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user entered \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109043900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "he clicks on the login button",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168612199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "he sees \"Inventory page\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15242300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118178600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "loging-in;log-in-with-different-user-data",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Log in with different user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1008230999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204137699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user entered \"locked_out_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 329624700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "he clicks on the login button",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365301400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "he sees \"Locked Out Error\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80449599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1936181700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "loging-in;log-in-with-different-user-data",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Log in with different user data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1769748100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193811499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user entered \"standard_user\" and \"secret\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188761699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "he clicks on the login button",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179971199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "he sees \"Wrong Credentials Error\"",
+            "match": {
+              "location": "tests\\step_definitions\\stepdefs-loging.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25343000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174435300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "loging-in",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Loging in",
+    "tags": [],
+    "uri": "tests\\features\\loging-in.feature"
   }
 ]
