@@ -65,13 +65,13 @@ In der Datei `world.ts` wird die CustomWorld-Klasse definiert.
 
 ## Tests ausführen
 
-- Testfälle werden mit diesem Befehl ausgeführt:
+Testfälle werden mit diesem Befehl ausgeführt:
 
-`npm run`
+- `npm test`
 
-- Um das Ergebnis der Testdurchführung als JSON-Report zu speichern und danach HTML-Report-Skript zu starten, wird folgender Befehl benutzt:
+Um das Ergebnis der Testdurchführung als JSON-Report zu speichern und danach HTML-Report-Skript zu starten, wird folgender Befehl benutzt:
 
-`npm test:report`
+- `npm test:report`
 
 Damit werden die Testberichte nach dem Testlauf automatisch erstellt.
 
